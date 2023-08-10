@@ -1,10 +1,10 @@
 import { LightningElement,api } from 'lwc';
-import First_Name_FIELD from '@salesforce/schema/Contact.FirstName';
-import Last_Name_FIELD from '@salesforce/schema/Contact.LastName';
-import Phone_FIELD from '@salesforce/schema/Contact.Phone';
-import Email_FIELD from '@salesforce/schema/Contact.Email';
+import FIRST_NAME_FIELD from '@salesforce/schema/Contact.FirstName';
+import LAST_NAME_FIELD from '@salesforce/schema/Contact.LastName';
+import PHONE_FIELD from '@salesforce/schema/Contact.Phone';
+import EMAIL_FIELD from '@salesforce/schema/Contact.Email';
 export default class Ligtningrecordform extends LightningElement {
-    fields=[First_Name_FIELD,Last_Name_FIELD,Phone_FIELD,Email_FIELD];
+    fields=[FIRST_NAME_FIELD,LAST_NAME_FIELD,PHONE_FIELD,EMAIL_FIELD];
     @api recordId;
     @api objectApiName;
 }
