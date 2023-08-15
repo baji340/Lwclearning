@@ -4,10 +4,8 @@
             Account Record List.
         </h2>
         offset :- {offset} <br> Prevoffset :- {Prevoffset}
-        <div class="slds-p-around_medium lgc-bg">
             <lightning-datatable key-field="Id" data={accounts} columns={columns} is-loading={tableLoadingState}>
             </lightning-datatable>
-        </div>
         <div style="text-align:center;">
             <c-pagination-navigation onprevious={handlePrev} onnext={handleNext}></c-pagination-navigation>
         </div>
