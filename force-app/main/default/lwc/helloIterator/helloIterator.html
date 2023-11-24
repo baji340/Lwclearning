@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="HelloIterator" icon-name="custom:custom14">
+        <ul class="slds-var-m-around_medium">
+            <template iterator:it={contacts}>
+                <li key={it.value.Id}>
+                    {it.value.Name}, {it.value.Title}
+                </li>
+            </template>
+        </ul>
+
+        <c-view-source source="lwc/helloIterator" slot="footer">
+            Loop through an array with special behavior for the first and last
+            items.
+        </c-view-source>
+    </lightning-card>
+</template>
