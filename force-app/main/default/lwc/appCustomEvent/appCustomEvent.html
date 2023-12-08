@@ -1,0 +1,13 @@
+<template>
+    <!--<lightning-card title="Custom Event" icon-name="custom:custom14">
+        <c-child-custom-event onuploadevent={handleUpload}></c-child-custom-event>
+    </lightning-card>
+    Event Fired : <h1>{evtName}</h1>-->
+    <lightning-card title="Custom Event" icon-name="custom:custom14">
+        <c-child-with-detail onuploadevent={handleUpload}></c-child-with-detail>
+        <div>
+            First name : {Fname}<br/>
+            Last Name : {Lname}
+        </div>
+    </lightning-card>
+</template>
