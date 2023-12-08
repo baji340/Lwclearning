@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="LWC Inputs" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <lightning-input name="Emp Name" value={empname} onchange={handlechange}></lightning-input>
+            <lightning-input name="Emp desg" value={empdesignation} onchange={handlechange}></lightning-input>
+        </div>
+        <div style="padding:10px">
+            <table border="1">
+                <tr>
+                    <td>Emp Name : </td>
+                    <td>{empname}</td>
+                </tr>
+                <tr>
+                    <td>Emp desg : </td>
+                    <td>{empdesignation}</td>
+                </tr>
+            </table>
+        </div>
+    </lightning-card>
+</template>
