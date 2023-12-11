@@ -11,4 +11,9 @@ public with sharing class AccountController {
     public static List<Account> getAccountList(){
         return [select Id,Name,Type,Website from Account];
     }
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAccList(){
+        return [select Id,Name,Type,Website from Account];
+    }
+
 }
